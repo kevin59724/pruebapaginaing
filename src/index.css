@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;700&family=Syncopate:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --bg-color: #050505;
+  --primary: #00f0ff;
+  --accent: #ff003c;
+  --text: #e0e7ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+  scrollbar-color: #00f0ff #050505;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar { width: 6px; }
+body::-webkit-scrollbar-track { background: #050505; }
+body::-webkit-scrollbar-thumb { background-color: #00f0ff; }
+
+/* Utilidades Tipográficas */
+.font-drama { font-family: 'Syncopate', sans-serif; }
+.font-data { font-family: 'Share Tech Mono', monospace; text-transform: uppercase; }
+
+/* Utilidades Cyberpunk */
+.glitch-text { 
+  text-shadow: 3px 0 rgba(255,0,60,0.8), -3px 0 rgba(0,240,255,0.8); 
+  letter-spacing: -0.05em;
+}
+
+.neon-border { 
+  border: 1px solid rgba(0, 240, 255, 0.2); 
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.05), inset 0 0 10px rgba(0, 240, 255, 0.05); 
+  transition: all 0.4s ease-out;
+}
+.neon-border:hover { 
+  border-color: rgba(0, 240, 255, 0.6); 
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1), inset 0 0 10px rgba(0, 240, 255, 0.1); 
+}
