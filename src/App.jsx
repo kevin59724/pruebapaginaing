@@ -90,7 +90,7 @@ const Hero = () => {
         <div className="hero-text font-data text-[#00f0ff] mb-6 tracking-[0.3em] text-xs px-3 py-1 border border-[#00f0ff]/30 inline-block bg-[#00f0ff]/5 backdrop-blur-sm">
           SYS.OPERATOR_WAITING
         </div>
-        <h1 className="hero-text font-drama text-5xl md:text-7xl lg:text-8xl font-bold uppercase text-white mb-6 glitch-text leading-[0.9]">
+        <h1 className="hero-text font-drama text-[2rem] leading-none sm:text-5xl md:text-7xl lg:text-8xl font-bold uppercase text-white mb-6 glitch-text tracking-tight break-words">
           Ingeniería <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-white to-[#ff003c]">Distribuida</span>
         </h1>
@@ -172,8 +172,8 @@ const ProjectsGrid = () => {
       {/* Uso estricto de GRID de 3 columnas para alinear horizontalmente sin importar animacion */}
       <div className="max-w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 auto-rows-fr">
         {projects.map((proj, i) => (
-          <div key={i} className="grid-card group outline outline-1 outline-[#00f0ff]/20 bg-[#0a0a0f] p-8 md:p-10 relative overflow-hidden flex flex-col justify-between h-auto min-h-[350px] cursor-pointer hover:-translate-y-2 blur-[2px] opacity-80 hover:blur-none hover:opacity-100 hover:outline-[#00f0ff]/80 transition-all duration-300 ease-out shadow-lg hover:shadow-[0_0_20px_rgba(0,240,255,0.2)]">
-            {/* Tarjeta con blur constante que se aclara en hover */}
+          <div key={i} className="grid-card group outline outline-1 outline-[#00f0ff]/20 bg-[#0a0a0f] p-8 md:p-10 relative overflow-hidden flex flex-col justify-between h-auto min-h-[350px] cursor-pointer hover:-translate-y-2 hover:outline-[#00f0ff]/80 transition-all duration-300 ease-out shadow-lg hover:shadow-[0_0_20px_rgba(0,240,255,0.2)]">
+            {/* Tarjeta 100% visible, sin difuminación para evitar bloqueos táctiles o de GSAP */}
             
             <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#00f0ff] to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             
